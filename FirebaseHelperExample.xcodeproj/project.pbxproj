@@ -16,12 +16,21 @@
 		397D65551E0BE21B0067193E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397D65531E0BE21B0067193E /* LaunchScreen.storyboard */; };
 		397D65601E0BE21B0067193E /* FirebaseHelperExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397D655F1E0BE21B0067193E /* FirebaseHelperExampleTests.swift */; };
 		397D656B1E0BE21B0067193E /* FirebaseHelperExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397D656A1E0BE21B0067193E /* FirebaseHelperExampleUITests.swift */; };
-		39A917E51E0DE67D00593321 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39A917E41E0DE67D00593321 /* GoogleService-Info.plist */; };
+		3984D2491E14DA0B00871AE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3984D2481E14DA0B00871AE2 /* GoogleService-Info.plist */; };
+		3984D24A1E14DA0C00871AE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3984D2481E14DA0B00871AE2 /* GoogleService-Info.plist */; };
+		3984D24D1E14E04500871AE2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3984D24B1E14E04500871AE2 /* LoginViewController.swift */; };
+		3984D24E1E14E04500871AE2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3984D24B1E14E04500871AE2 /* LoginViewController.swift */; };
+		3984D24F1E14E04500871AE2 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3984D24C1E14E04500871AE2 /* LoginViewController.xib */; };
+		3984D2501E14E04500871AE2 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3984D24C1E14E04500871AE2 /* LoginViewController.xib */; };
 		39BD1FD31E12D7000077A2F9 /* DataStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD1FD21E12D7000077A2F9 /* DataStructure.swift */; };
 		39BD1FD61E12EB7B0077A2F9 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD1FD51E12EB7B0077A2F9 /* Dictionary+Extension.swift */; };
 		39C589241E0C83FA009BFE6A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C589221E0C83FA009BFE6A /* SwiftyJSON.swift */; };
 		39C589251E0C83FA009BFE6A /* UserNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C589231E0C83FA009BFE6A /* UserNotificationManager.swift */; };
 		39D459441E0DE14B0079AF52 /* DatabaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D459431E0DE14B0079AF52 /* DatabaseTest.swift */; };
+		39E57FCA1E1851A70022CAC0 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E57FC91E1851A70022CAC0 /* ChatRoomViewController.swift */; };
+		39ED7A3E1E19B958001B3714 /* ChatRoomDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ED7A3D1E19B958001B3714 /* ChatRoomDetailViewController.swift */; };
+		39ED7A431E19D344001B3714 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ED7A411E19D344001B3714 /* MessageCell.swift */; };
+		39ED7A441E19D344001B3714 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39ED7A421E19D344001B3714 /* MessageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,12 +93,18 @@
 		397D65661E0BE21B0067193E /* FirebaseHelperExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseHelperExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		397D656A1E0BE21B0067193E /* FirebaseHelperExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelperExampleUITests.swift; sourceTree = "<group>"; };
 		397D656C1E0BE21B0067193E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39A917E41E0DE67D00593321 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3984D2481E14DA0B00871AE2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3984D24B1E14E04500871AE2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3984D24C1E14E04500871AE2 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		39BD1FD21E12D7000077A2F9 /* DataStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStructure.swift; sourceTree = "<group>"; };
 		39BD1FD51E12EB7B0077A2F9 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		39C589221E0C83FA009BFE6A /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		39C589231E0C83FA009BFE6A /* UserNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNotificationManager.swift; sourceTree = "<group>"; };
 		39D459431E0DE14B0079AF52 /* DatabaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseTest.swift; sourceTree = "<group>"; };
+		39E57FC91E1851A70022CAC0 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		39ED7A3D1E19B958001B3714 /* ChatRoomDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomDetailViewController.swift; sourceTree = "<group>"; };
+		39ED7A411E19D344001B3714 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		39ED7A421E19D344001B3714 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,16 +167,20 @@
 			isa = PBXGroup;
 			children = (
 				39BD1FD01E12D6B80077A2F9 /* Class */,
-				39C589221E0C83FA009BFE6A /* SwiftyJSON.swift */,
-				39C589231E0C83FA009BFE6A /* UserNotificationManager.swift */,
 				397D65481E0BE21B0067193E /* AppDelegate.swift */,
+				39ED7A3D1E19B958001B3714 /* ChatRoomDetailViewController.swift */,
+				39E57FC91E1851A70022CAC0 /* ChatRoomViewController.swift */,
 				397D654A1E0BE21B0067193E /* FirstViewController.swift */,
 				397D654C1E0BE21B0067193E /* SecondViewController.swift */,
 				397D654E1E0BE21B0067193E /* Main.storyboard */,
 				397D65511E0BE21B0067193E /* Assets.xcassets */,
 				397D65531E0BE21B0067193E /* LaunchScreen.storyboard */,
 				397D65561E0BE21B0067193E /* Info.plist */,
-				39A917E41E0DE67D00593321 /* GoogleService-Info.plist */,
+				3984D2481E14DA0B00871AE2 /* GoogleService-Info.plist */,
+				3984D24B1E14E04500871AE2 /* LoginViewController.swift */,
+				3984D24C1E14E04500871AE2 /* LoginViewController.xib */,
+				39ED7A411E19D344001B3714 /* MessageCell.swift */,
+				39ED7A421E19D344001B3714 /* MessageCell.xib */,
 			);
 			path = FirebaseHelperExample;
 			sourceTree = "<group>";
@@ -189,6 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				39BD1FD41E12EB6A0077A2F9 /* Extension */,
+				39C589231E0C83FA009BFE6A /* UserNotificationManager.swift */,
+				39C589221E0C83FA009BFE6A /* SwiftyJSON.swift */,
 				39BD1FD21E12D7000077A2F9 /* DataStructure.swift */,
 			);
 			name = Class;
@@ -336,8 +357,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3984D24F1E14E04500871AE2 /* LoginViewController.xib in Resources */,
+				39ED7A441E19D344001B3714 /* MessageCell.xib in Resources */,
 				397D65551E0BE21B0067193E /* LaunchScreen.storyboard in Resources */,
-				39A917E51E0DE67D00593321 /* GoogleService-Info.plist in Resources */,
+				3984D2491E14DA0B00871AE2 /* GoogleService-Info.plist in Resources */,
 				397D65521E0BE21B0067193E /* Assets.xcassets in Resources */,
 				397D65501E0BE21B0067193E /* Main.storyboard in Resources */,
 			);
@@ -347,6 +370,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3984D2501E14E04500871AE2 /* LoginViewController.xib in Resources */,
+				3984D24A1E14DA0C00871AE2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,13 +389,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39ED7A431E19D344001B3714 /* MessageCell.swift in Sources */,
 				39C589251E0C83FA009BFE6A /* UserNotificationManager.swift in Sources */,
 				39BD1FD61E12EB7B0077A2F9 /* Dictionary+Extension.swift in Sources */,
 				397D654D1E0BE21B0067193E /* SecondViewController.swift in Sources */,
 				397D65491E0BE21B0067193E /* AppDelegate.swift in Sources */,
+				3984D24D1E14E04500871AE2 /* LoginViewController.swift in Sources */,
 				39BD1FD31E12D7000077A2F9 /* DataStructure.swift in Sources */,
+				39ED7A3E1E19B958001B3714 /* ChatRoomDetailViewController.swift in Sources */,
 				397D654B1E0BE21B0067193E /* FirstViewController.swift in Sources */,
 				39C589241E0C83FA009BFE6A /* SwiftyJSON.swift in Sources */,
+				39E57FCA1E1851A70022CAC0 /* ChatRoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3984D24E1E14E04500871AE2 /* LoginViewController.swift in Sources */,
 				39D459441E0DE14B0079AF52 /* DatabaseTest.swift in Sources */,
 				397D65601E0BE21B0067193E /* FirebaseHelperExampleTests.swift in Sources */,
 			);
@@ -526,7 +556,7 @@
 				INFOPLIST_FILE = FirebaseHelperExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.minhyen.FirstFirebaseApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minhyen.FirebaseHelperExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -541,7 +571,7 @@
 				INFOPLIST_FILE = FirebaseHelperExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.minhyen.FirstFirebaseApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minhyen.FirebaseHelperExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>127782854677-66vq88c5ku35rvd8lkq20iggslcf0v8j.apps.googleusercontent.com</string>
+	<string>507549460566-1kao5tevb2b6lml9pfc72mvev6i24766.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.127782854677-66vq88c5ku35rvd8lkq20iggslcf0v8j</string>
+	<string>com.googleusercontent.apps.507549460566-1kao5tevb2b6lml9pfc72mvev6i24766</string>
 	<key>API_KEY</key>
-	<string>AIzaSyATYe8DtYbmCK-FKl-GOgXA3U_sspYpA3o</string>
+	<string>AIzaSyB7ghwZUSaGacZ90hNUGKA7v2LM3Wdr5z4</string>
 	<key>GCM_SENDER_ID</key>
-	<string>127782854677</string>
+	<string>507549460566</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.minhyen.FirstFirebaseApp</string>
+	<string>com.minhyen.FirebaseHelperExample</string>
 	<key>PROJECT_ID</key>
-	<string>fblearning-c2980</string>
+	<string>fir-learning-d3918</string>
 	<key>STORAGE_BUCKET</key>
-	<string>fblearning-c2980.appspot.com</string>
+	<string>fir-learning-d3918.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:127782854677:ios:85defda7effb992e</string>
+	<string>1:507549460566:ios:af0689b16b44887c</string>
 	<key>DATABASE_URL</key>
-	<string>https://fblearning-c2980.firebaseio.com</string>
+	<string>https://fir-learning-d3918.firebaseio.com</string>
 </dict>
 </plist>

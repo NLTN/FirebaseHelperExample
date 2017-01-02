@@ -7,11 +7,12 @@
 //
 
 import UIKit
-
 import FirebaseHelper
 
 class FirstViewController: UIViewController {
 
+    // MARK: - IBOutlets
+    
     @IBOutlet weak var lblDisplayTextFromFirebase: UILabel!
     
     override func viewDidLoad() {
@@ -83,7 +84,7 @@ class FirstViewController: UIViewController {
     // MARK: - Events
     @IBAction func btnRegisterAction(_ sender: UIButton) {
         // FirebaseHelper.Authentication.CreateUser(withEmail: "nltn@msn.com", password: "abc123")
-        FirebaseHelper.Authentication.CreateUser(withEmail: "nltn3@msn.com", password: "123abc") { (userID:String?, error) in
+        FirebaseHelper.Authentication.CreateUser(withEmail: "nltn@msn.com", password: "123abc") { (userID:String?, error) in
             if error != nil {
                 print(error!)
                 return
@@ -95,7 +96,7 @@ class FirstViewController: UIViewController {
         }
     }
     @IBAction func btnLoginAction(_ sender: UIButton) {
-         FirebaseHelper.Authentication.SignIn(withEmail: "nltn@msn.com", password: "abc123")
+         FirebaseHelper.Authentication.SignIn(withEmail: "nltn@msn.com", password: "123abc")
     }
     @IBAction func btnSignOut(_ sender: UIButton) {
         FirebaseHelper.Authentication.SignOut()

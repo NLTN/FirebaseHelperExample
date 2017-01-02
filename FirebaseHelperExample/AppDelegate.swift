@@ -20,11 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let notificationManger = NotificationManager()
 
     // MARK: - Firebase Helper Variables
-    var firebaseNotification: FirebaseHelper.Notification!
+    var firebaseNotification: FirebaseHelper.FirebaseNotification!
 
     // MARK: - Handlers
     // Message Handling
-    func DidReceiveNotification(_ message: FirebaseHelper.Notification.Message) {
+    func DidReceiveNotification(_ message: FirebaseHelper.FirebaseNotification.Message) {
         // Send a notification
         notificationManger.sendNotification(title: message.Title, subtitle: message.Subtitle, body: message.Body, userInfo: nil, badge: message.Badge, categoryID: "", timeInterval: 1)
     }
@@ -41,12 +41,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // [START FirebaseHelper-Notification]
         // Create a Firebase Helper instance.
-        firebaseNotification = FirebaseHelper.Notification(application)
+        firebaseNotification = FirebaseHelper.FirebaseNotification(application)
         
         // Handler
         firebaseNotification.DidReceiveNotification = self.DidReceiveNotification
         // [END FirebaseHelper-Notification]
 
+        
+        // Login/Register
+        CheckLoginStatus()
+        
         return true
     }
 
@@ -55,16 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
         firebaseNotification.application(application, didReceiveRemoteNotification: userInfo)
     }
-//    @available(iOS 8.0, *)
-//    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any],
-//                     fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void){
-//        firebaseNotification.application(application, didReceiveRemoteNotification: userInfo) { (completion) in
-//            
-//            
-//        }
-//    }
-    // [END receive_message - Available for IOS 8.* - 9.*]
-
+    
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print("Unable to register for remote notifications: \(error.localizedDescription)")
     }
@@ -101,5 +96,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    
+    // MARK: - Functions
+    func CheckLoginStatus() {
+        if !FirebaseHelper.Authentication.IsSignedIn {
+            // Present Login View Controller
+            self.window!.rootViewController = LoginViewController.instanceFromNib()
+        }
     }
 }

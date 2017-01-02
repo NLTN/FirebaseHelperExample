@@ -21,4 +21,17 @@ extension Dictionary {
             return ""
         }
     }
+    
+    // Access Dictionary via index
+    subscript(index:Int) -> (key:Key,value:Value) {
+        get {
+            return (Array(self.keys)[index] , Array(self.values)[index])
+        }
+    }
+//    subscript(i:Int) -> (key:Key,value:Value) {
+//        get {
+//            return self[startIndex.advancedBy(i)]
+//        }
+//    }
+    
 }
