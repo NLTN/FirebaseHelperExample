@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		39340DAF1E14D316006F7D25 /* FirebaseHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39340DAC1E14D310006F7D25 /* FirebaseHelper.framework */; };
+		39487E771E1B3C6B00DAEE4F /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39487E761E1B3C6B00DAEE4F /* MessageCell.swift */; };
+		39487E791E1B4B1100DAEE4F /* MyMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39487E781E1B4B1100DAEE4F /* MyMessageCell.swift */; };
+		39487E7C1E1B571300DAEE4F /* IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39487E7B1E1B571300DAEE4F /* IBDesignable.swift */; };
 		397D65491E0BE21B0067193E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397D65481E0BE21B0067193E /* AppDelegate.swift */; };
 		397D654B1E0BE21B0067193E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397D654A1E0BE21B0067193E /* FirstViewController.swift */; };
 		397D654D1E0BE21B0067193E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397D654C1E0BE21B0067193E /* SecondViewController.swift */; };
@@ -29,8 +32,6 @@
 		39D459441E0DE14B0079AF52 /* DatabaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D459431E0DE14B0079AF52 /* DatabaseTest.swift */; };
 		39E57FCA1E1851A70022CAC0 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E57FC91E1851A70022CAC0 /* ChatRoomViewController.swift */; };
 		39ED7A3E1E19B958001B3714 /* ChatRoomDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ED7A3D1E19B958001B3714 /* ChatRoomDetailViewController.swift */; };
-		39ED7A431E19D344001B3714 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ED7A411E19D344001B3714 /* MessageCell.swift */; };
-		39ED7A441E19D344001B3714 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39ED7A421E19D344001B3714 /* MessageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,9 @@
 
 /* Begin PBXFileReference section */
 		39340DA61E14D310006F7D25 /* FirebaseHelper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FirebaseHelper.xcodeproj; path = ../../Xcode/FirebaseHelper/FirebaseHelper.xcodeproj; sourceTree = "<group>"; };
+		39487E761E1B3C6B00DAEE4F /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		39487E781E1B4B1100DAEE4F /* MyMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMessageCell.swift; sourceTree = "<group>"; };
+		39487E7B1E1B571300DAEE4F /* IBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDesignable.swift; sourceTree = "<group>"; };
 		397D65451E0BE21B0067193E /* FirebaseHelperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseHelperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		397D65481E0BE21B0067193E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		397D654A1E0BE21B0067193E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -103,8 +107,6 @@
 		39D459431E0DE14B0079AF52 /* DatabaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseTest.swift; sourceTree = "<group>"; };
 		39E57FC91E1851A70022CAC0 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		39ED7A3D1E19B958001B3714 /* ChatRoomDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomDetailViewController.swift; sourceTree = "<group>"; };
-		39ED7A411E19D344001B3714 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
-		39ED7A421E19D344001B3714 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		39487E711E1B3BF500DAEE4F /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				39487E761E1B3C6B00DAEE4F /* MessageCell.swift */,
+				39487E781E1B4B1100DAEE4F /* MyMessageCell.swift */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		39487E7A1E1B56F800DAEE4F /* IBDesignable */ = {
+			isa = PBXGroup;
+			children = (
+				39487E7B1E1B571300DAEE4F /* IBDesignable.swift */,
+			);
+			name = IBDesignable;
+			sourceTree = "<group>";
+		};
 		397D653C1E0BE21B0067193E = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +185,8 @@
 		397D65471E0BE21B0067193E /* FirebaseHelperExample */ = {
 			isa = PBXGroup;
 			children = (
+				39487E7A1E1B56F800DAEE4F /* IBDesignable */,
+				39487E711E1B3BF500DAEE4F /* CustomCells */,
 				39BD1FD01E12D6B80077A2F9 /* Class */,
 				397D65481E0BE21B0067193E /* AppDelegate.swift */,
 				39ED7A3D1E19B958001B3714 /* ChatRoomDetailViewController.swift */,
@@ -179,8 +200,6 @@
 				3984D2481E14DA0B00871AE2 /* GoogleService-Info.plist */,
 				3984D24B1E14E04500871AE2 /* LoginViewController.swift */,
 				3984D24C1E14E04500871AE2 /* LoginViewController.xib */,
-				39ED7A411E19D344001B3714 /* MessageCell.swift */,
-				39ED7A421E19D344001B3714 /* MessageCell.xib */,
 			);
 			path = FirebaseHelperExample;
 			sourceTree = "<group>";
@@ -358,7 +377,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3984D24F1E14E04500871AE2 /* LoginViewController.xib in Resources */,
-				39ED7A441E19D344001B3714 /* MessageCell.xib in Resources */,
 				397D65551E0BE21B0067193E /* LaunchScreen.storyboard in Resources */,
 				3984D2491E14DA0B00871AE2 /* GoogleService-Info.plist in Resources */,
 				397D65521E0BE21B0067193E /* Assets.xcassets in Resources */,
@@ -389,15 +407,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39ED7A431E19D344001B3714 /* MessageCell.swift in Sources */,
+				39487E771E1B3C6B00DAEE4F /* MessageCell.swift in Sources */,
 				39C589251E0C83FA009BFE6A /* UserNotificationManager.swift in Sources */,
 				39BD1FD61E12EB7B0077A2F9 /* Dictionary+Extension.swift in Sources */,
 				397D654D1E0BE21B0067193E /* SecondViewController.swift in Sources */,
 				397D65491E0BE21B0067193E /* AppDelegate.swift in Sources */,
+				39487E7C1E1B571300DAEE4F /* IBDesignable.swift in Sources */,
 				3984D24D1E14E04500871AE2 /* LoginViewController.swift in Sources */,
 				39BD1FD31E12D7000077A2F9 /* DataStructure.swift in Sources */,
 				39ED7A3E1E19B958001B3714 /* ChatRoomDetailViewController.swift in Sources */,
 				397D654B1E0BE21B0067193E /* FirstViewController.swift in Sources */,
+				39487E791E1B4B1100DAEE4F /* MyMessageCell.swift in Sources */,
 				39C589241E0C83FA009BFE6A /* SwiftyJSON.swift in Sources */,
 				39E57FCA1E1851A70022CAC0 /* ChatRoomViewController.swift in Sources */,
 			);
