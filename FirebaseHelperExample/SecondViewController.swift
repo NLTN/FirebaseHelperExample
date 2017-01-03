@@ -37,5 +37,10 @@ class SecondViewController: UIViewController {
     }
 
 
+    // MARK: - Actions
+    
+    @IBAction func btnSignOutAction(_ sender: UIButton) {
+        FirebaseHelper.Authentication.SignOut()
+    }
 }
 

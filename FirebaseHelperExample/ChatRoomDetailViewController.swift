@@ -70,8 +70,15 @@ class ChatRoomDetailViewController: UIViewController {
             // Get Current User
             let user = FirebaseHelper.Authentication.currentUser
             
+            var displayName = ""
+            if user?.displayName != nil {
+                displayName = (user?.displayName)!
+            } else {
+                displayName = (user?.email)!
+            }
+            
             // Send
-            sendMessage(withUserID: user!.uid, username: user!.displayName!, title: "abc", body: txtMessageBody.text!)
+            sendMessage(withUserID: user!.uid, username: displayName, title: "abc", body: txtMessageBody.text!)
             
             // Clear the text field
             txtMessageBody.text = ""
