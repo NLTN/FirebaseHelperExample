@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39340DAF1E14D316006F7D25 /* FirebaseHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39340DAC1E14D310006F7D25 /* FirebaseHelper.framework */; };
+		39321D191E1C4DD500C438D1 /* FirebaseHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39340DAC1E14D310006F7D25 /* FirebaseHelper.framework */; };
+		39321D1A1E1C4DD500C438D1 /* FirebaseHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 39340DAC1E14D310006F7D25 /* FirebaseHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39487E771E1B3C6B00DAEE4F /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39487E761E1B3C6B00DAEE4F /* MessageCell.swift */; };
 		39487E791E1B4B1100DAEE4F /* MyMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39487E781E1B4B1100DAEE4F /* MyMessageCell.swift */; };
 		39487E7C1E1B571300DAEE4F /* IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39487E7B1E1B571300DAEE4F /* IBDesignable.swift */; };
@@ -35,6 +36,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		39321D1B1E1C4DD500C438D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39340DA61E14D310006F7D25 /* FirebaseHelper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3918EA281E14D1FF0012EBE6;
+			remoteInfo = FirebaseHelper;
+		};
 		39340DAB1E14D310006F7D25 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 39340DA61E14D310006F7D25 /* FirebaseHelper.xcodeproj */;
@@ -72,6 +80,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				39321D1A1E1C4DD500C438D1 /* FirebaseHelper.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39340DAF1E14D316006F7D25 /* FirebaseHelper.framework in Frameworks */,
+				39321D191E1C4DD500C438D1 /* FirebaseHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +266,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				39321D1C1E1C4DD500C438D1 /* PBXTargetDependency */,
 			);
 			name = FirebaseHelperExample;
 			productName = FirebaseHelperExample;
@@ -444,6 +454,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		39321D1C1E1C4DD500C438D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FirebaseHelper;
+			targetProxy = 39321D1B1E1C4DD500C438D1 /* PBXContainerItemProxy */;
+		};
 		397D655D1E0BE21B0067193E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 397D65441E0BE21B0067193E /* FirebaseHelperExample */;
@@ -579,6 +594,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.minhyen.FirebaseHelperExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -594,6 +610,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.minhyen.FirebaseHelperExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

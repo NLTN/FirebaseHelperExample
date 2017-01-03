@@ -87,7 +87,7 @@ class ChatRoomDetailViewController: UIViewController {
             txtMessageBody.resignFirstResponder()
             
             // Scroll down
-            self.tableView.scrollToRow(at: IndexPath(row: self.Messages.count-1, section: 0), at: .bottom, animated: true)
+            // self.tableView.scrollToRow(at: IndexPath(row: self.Messages.count-1, section: 0), at: .bottom, animated: true)
         }
     }
     
