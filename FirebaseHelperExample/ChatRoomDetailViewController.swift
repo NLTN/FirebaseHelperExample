@@ -24,28 +24,27 @@ class ChatRoomDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Keyboard Notification
         registerForKeyboardNotifications()
 
-        // Register Custom Cell
-        //tableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "cell")
-        // tableView.register(MessageCell, forCellReuseIdentifier: "cellOtherUsers")
-        // Table Data Source
+        // Setup Table Data Source
         dataSource = tableDataSource(ParentVC: self, cellIdentifier: "cell")
         tableView.dataSource = dataSource
 
-        
-        setupListeners()
-        
+        // Setup TableView
         tableView.separatorStyle = .none
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 340
         
-
+        // Firebase
+        setupListeners()
     }
+    
     override func viewWillDisappear(_ animated: Bool) {
         // Unregister for Notifications
         unregisterForNotifications()
     }
+    
     // KeyboarWillShow
     func keyboardWillShow(_ sender: Notification) {
         if let userInfo = sender.userInfo {
@@ -58,8 +57,6 @@ class ChatRoomDetailViewController: UIViewController {
         if let userInfo = sender.userInfo {
             self.handleKeyboardWillShowOrHide(up: false, keyboardHeight: (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.size.height)
         }
-
-        // self.handleKeyboardWillShowOrHide(up: false, keyboardHeight: 0)
     }
 
 
@@ -67,6 +64,7 @@ class ChatRoomDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     // MARK: - Actions
     @IBAction func btnSendAction(_ sender: UIButton) {
         if !(txtMessageBody.text?.isEmpty)! {
@@ -88,13 +86,17 @@ class ChatRoomDetailViewController: UIViewController {
             
             // Hide keyboard
             txtMessageBody.resignFirstResponder()
-            
-            // Scroll down
-            // self.tableView.scrollToRow(at: IndexPath(row: self.Messages.count-1, section: 0), at: .bottom, animated: true)
         }
     }
     
     // MARK: - Functions
+    var enableScrollDown = false
+    func ScrollDown() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+             self.tableView.scrollToRow(at: IndexPath(row: self.Messages.count-1, section: 0), at: .bottom, animated: true)
+        }
+    }
+    
     func setupListeners() {
         let helper = FirebaseHelper.Database()
         helper.Query(path: "/Chat/Messages/", orderBy: "RoomID", condition: .equalToString(SelectedRoomID), observingMode: .listenForChanges, eventType: .childAdded) { (snapshot) in
@@ -106,7 +108,10 @@ class ChatRoomDetailViewController: UIViewController {
             self.tableView.insertRows(at: [IndexPath(row: self.Messages.count-1, section: 0)], with: .automatic)
 
             // Scroll down
-            //self.tableView.scrollToRow(at: IndexPath(row: self.Messages.count-1, section: 0), at: .bottom, animated: true)
+            // if self.enableScrollDown {
+                self.ScrollDown()
+            // }
+            
         }
     }
     
@@ -120,6 +125,9 @@ class ChatRoomDetailViewController: UIViewController {
                     "Body": body]
         let childUpdates = ["/Chat/Messages/\(key)": post]
         ref.updateChildValues(childUpdates)
+        
+        enableScrollDown = true
+
     }
     
     // MARK: - Private Functions - Keyboard
