@@ -42,7 +42,10 @@ class ChatRoomDetailViewController: UIViewController {
         
 
     }
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        // Unregister for Notifications
+        unregisterForNotifications()
+    }
     // KeyboarWillShow
     func keyboardWillShow(_ sender: Notification) {
         if let userInfo = sender.userInfo {
@@ -127,6 +130,11 @@ class ChatRoomDetailViewController: UIViewController {
         // Listen for Keyboard Will Hide Event
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
+    
+    func unregisterForNotifications() {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     func handleKeyboardWillShowOrHide(up: Bool, keyboardHeight: CGFloat) {
         UIView.animate(withDuration: 0.25, animations: { () -> Void in
             let bottomBarHeight = self.tabBarController?.tabBar.frame.height
