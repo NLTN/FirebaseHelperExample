@@ -28,8 +28,14 @@ class SecondViewController: UIViewController {
         print("------------------------")
         print("To JSON 2:")
         print(i.toJSON2())
+        
+        Test()
     }
 
+    func Test() {
+        let a = FirebaseHelper.Storage()
+        a.TestUpload()
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
