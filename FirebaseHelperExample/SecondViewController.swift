@@ -34,7 +34,24 @@ class SecondViewController: UIViewController {
 
     func Test() {
         let a = FirebaseHelper.Storage()
-        a.TestUpload()
+        // a.TestUpload()
+        
+        
+        let DocumentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+
+        let filePath = DocumentDirectory + "/MYSale.db.zip"
+        a.Upload(filePath: filePath, storagePath: "") { (percentComplete, metadata, error) in
+            if error != nil {
+                print(error!)
+            } else {
+                if percentComplete == 100 {
+                    print("Success.")
+                    print("Download URL: \(metadata?.downloadURL())")
+                } else {
+                    print("percent:\(percentComplete), url:\(metadata?.downloadURL())")
+                }
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {

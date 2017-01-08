@@ -32,7 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Events
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+        let DocumentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        print(DocumentDirectory)
         // Firebase - Initialize
         FirebaseHelper.registerForFirebase()
         
